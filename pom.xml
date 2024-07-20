@@ -61,4 +61,7 @@
 		</plugins>
 	</build>
 
+	<packaging>war</packaging>
+
+
 </project>
