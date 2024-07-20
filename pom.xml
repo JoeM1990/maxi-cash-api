@@ -18,7 +18,11 @@
 		<license/>
 	</licenses>
 	<developers>
-		<developer/>
+		<developer>
+            <id>Jonathan</id>
+            <name>Monkila</name>
+            <email>jnkiwa25@gmail.com</email>
+        </developer>
 	</developers>
 	<scm>
 		<connection>scm:git:git://github.com/JoeM1990/maxi-cash-api.git</connection>
