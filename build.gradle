@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'com.monkilatech'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            pom {
+                name = 'demo'
+                description = 'api pay maxicash for mobile money'
+                url = 'https://github.com/JoeM1990/maxi-cash-api'
+                scm {
+                    connection = 'scm:git:git://github.com/JoeM1990/maxi-cash-api.git'
+                    developerConnection = 'scm:git:ssh://github.com:JoeM1990/maxi-cash-api.git'
+                    url = 'https://github.com/JoeM1990/maxi-cash-api'
+                }
+                developers {
+                    developer {
+                        id = 'Jonathan'
+                        name = 'Monkila'
+                        email = 'jnkiwa25@gmail.com'
+                    }
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            name = 'ossrh'
+            url = uri('https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/')
+            credentials {
+                username = project.findProperty("ossrhUsername") ?: "jnkiwa25@gmail.com"
+                password = project.findProperty("ossrhPassword") ?: "Ahumba243"
+            }
+        }
+    }
+}
