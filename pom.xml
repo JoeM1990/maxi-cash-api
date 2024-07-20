@@ -102,20 +102,6 @@
         </snapshotRepository>
     </distributionManagement>
 
-    <!-- <scm>
-        <connection>scm:git:git://github.com/yourusername/demo.git</connection>
-        <developerConnection>scm:git:ssh://github.com:yourusername/demo.git</developerConnection>
-        <url>https://github.com/yourusername/demo</url>
-    </scm> -->
-
-    <!-- <developers>
-        <developer>
-            <id>yourusername</id>
-            <name>Your Name</name>
-            <email>your-email@example.com</email>
-        </developer>
-    </developers> -->
-
 	<packaging>war</packaging>
 
 
