@@ -22,7 +22,7 @@ publishing {
         mavenJava(MavenPublication) {
             from components.java
             pom {
-                name = 'demo'
+                name = 'maxi-cash-api'
                 description = 'api pay maxicash for mobile money'
                 url = 'https://github.com/JoeM1990/maxi-cash-api'
                 scm {
