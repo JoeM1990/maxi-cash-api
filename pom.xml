@@ -21,10 +21,9 @@
 		<developer/>
 	</developers>
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<connection>scm:git:git://github.com/JoeM1990/maxi-cash-api.git</connection>
+        <developerConnection>scm:git:ssh://github.com:JoeM1990/maxi-cash-api.git</developerConnection>
+        <url>https://github.com/JoeM1990/maxi-cash-api</url>
 	</scm>
 	<properties>
 		<java.version>17</java.version>
@@ -87,6 +86,31 @@
             </plugin>
         </plugins>
     </build>
+
+	<distributionManagement>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <!-- <scm>
+        <connection>scm:git:git://github.com/yourusername/demo.git</connection>
+        <developerConnection>scm:git:ssh://github.com:yourusername/demo.git</developerConnection>
+        <url>https://github.com/yourusername/demo</url>
+    </scm> -->
+
+    <!-- <developers>
+        <developer>
+            <id>yourusername</id>
+            <name>Your Name</name>
+            <email>your-email@example.com</email>
+        </developer>
+    </developers> -->
 
 	<packaging>war</packaging>
 
