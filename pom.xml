@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.monkilatech</groupId>
 	<artifactId>maxi-cash-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>maxi-cash-api</name>
 	<description>api pay maxicash for mobile money</description>
 	<url/>
