@@ -2,7 +2,6 @@ name: Auto Commit with Random Messages
 
 on:
   schedule:
-    # Exécuter toutes les 20 minutes
     - cron: "*/1 * * * *"
 
 jobs:
