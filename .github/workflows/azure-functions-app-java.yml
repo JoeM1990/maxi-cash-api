@@ -20,7 +20,7 @@ jobs:
     - name: Generate Random Commit Message
       id: commit_message
       run: |
-        MESSAGES=("Update docs" "Fix typos" "Improve comments" "Optimize code" "Small adjustments" "Routine update" "Minor refactor")
+        MESSAGES=("Update docs" "Fix typos" "Improve comments" "Optimize code" "Small adjustments" "Routine update" "Minor refactor" "changed controller" "fixed controller" "fixed bugs" "add functionality" "update service" "review codes")
         RANDOM_INDEX=$((RANDOM % ${#MESSAGES[@]}))
         echo "message=${MESSAGES[$RANDOM_INDEX]}" >> $GITHUB_ENV
 
